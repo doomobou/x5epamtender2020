@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gmail_test:
+    container_name: gmail_tests
+    volumes:
+    - ./allure_report:/allure_report
+    image: your_image_name
+    environment:
+      EMAIL_ADDRESS: "your_email@gmail.com"
+      EMAIL_PASS: "your_gmail_password"
